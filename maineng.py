@@ -1,6 +1,7 @@
 import telebot
 import tok
 import fich
+import opred
 
 bot = telebot.TeleBot(tok.token)
 
@@ -182,4 +183,5 @@ def lalala(message):
             fich.agr(message)
         else:
             bot.send_message(message.chat.id, "Извините, я не знаю этого слова или слов на эту букву")
+
 bot.polling(none_stop=True)
